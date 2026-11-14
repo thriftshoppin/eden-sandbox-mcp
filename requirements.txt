@@ -1,0 +1,4 @@
+mcp==2.3.0
+playwright>=1.49
+pillow
+mss>=10

@@ -1,0 +1,10 @@
+# Example ngrok agent config. Copy values into ~/.config/ngrok/ngrok.yml
+# with: ngrok config add-authtoken <token>
+# Then add the heartbeat settings below (10s is the minimum interval).
+#
+# Do not put a real authtoken in this file or commit ngrok.yml.
+version: "3"
+agent:
+  heartbeat_interval: 10s
+  heartbeat_tolerance: 45s
+  authtoken: YOUR_NGROK_AUTHTOKEN

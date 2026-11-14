@@ -1,0 +1,50 @@
+# Secrets and local identity
+desktop.key
+desktop-connector-url.txt
+mcp.token
+.env
+*.env
+!*.env.example
+ngrok.yml
+**/ngrok.yml
+
+# Runtime URL and tunnel state
+current_url.txt
+public-url.txt
+url_history.log
+outages.log
+outage_state
+ngrok-hosts
+cf-hosts
+
+# Logs, PIDs, locks
+*.log
+*.log.*
+*.pid
+*.lock
+*.singleton
+*.old
+*.bak
+*.bak-rel
+
+# Desktop session and transfer data
+desk_arm.state
+desk_arm.state.tmp
+desk_actions.log
+desk_last_ocr.tsv
+shots/
+desk_shots/
+xfer/
+
+# Python / venv
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Editor / OS junk
+.DS_Store
+.idea/
+.vscode/
