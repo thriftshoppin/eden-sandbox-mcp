@@ -18,7 +18,7 @@ Educational repository showing a working Streamable HTTP MCP server and the supe
 - A secret-path desktop endpoint (`/d/<key>/mcp`) whose action tools stay off until a human arms them.
 - Batch file transfer that cannot approve itself.
 
-Tutorials: [docs/BUILD-YOUR-OWN.md](docs/BUILD-YOUR-OWN.md), [docs/EXPOSING-MCP-OVER-HTTPS.md](docs/EXPOSING-MCP-OVER-HTTPS.md). The reasoning and threat model: [docs/SECURITY-MODEL.md](docs/SECURITY-MODEL.md). Status: [WIP.md](WIP.md).
+Platform context, in the developer's voice: [docs/EDEN.md](docs/EDEN.md). Tutorials: [docs/BUILD-YOUR-OWN.md](docs/BUILD-YOUR-OWN.md), [docs/EXPOSING-MCP-OVER-HTTPS.md](docs/EXPOSING-MCP-OVER-HTTPS.md). The reasoning and threat model: [docs/SECURITY-MODEL.md](docs/SECURITY-MODEL.md). Status: [WIP.md](WIP.md).
 
 ## Trust boundaries
 
@@ -110,10 +110,10 @@ Hold these when you change code or when you build your own server. If a change v
 
 **Designed, not claimed as built or tested here** (label these as planned if you mention them):
 
-- [eden-desktop-bridge](https://github.com/thriftshoppin/eden-desktop-bridge) guardian on a personal Windows PC, including a pairing gate that was not tested on the deck from this work.
+- [eden-desktop-bridge](https://github.com/thriftshoppin/eden-desktop-bridge) (**private**) guardian on a personal Windows PC, including a pairing gate that was not tested on the deck from this work.
 - [grok-hotline](https://github.com/thriftshoppin/grok-hotline) outbound-only relay so no port is opened on the operator's machines.
 - **Eden Link**: a planned master console over multiple bridges, with a master kill switch that *relays* stops; each Eden would keep its own local kill switch and acknowledge the cut. Approvals would rank over typed commands.
 
 The honest claim is only that a *hosted* agent can be limited to tools that announce every call and wait for approval. That is not a promise that a rogue local agent cannot get past it.
 
-When in doubt, read [docs/SECURITY-MODEL.md](docs/SECURITY-MODEL.md) and build your own server rather than aiming this one at someone else's box.
+When in doubt, read [docs/EDEN.md](docs/EDEN.md) and [docs/SECURITY-MODEL.md](docs/SECURITY-MODEL.md), and build your own server rather than aiming this one at someone else's box.

@@ -11,7 +11,7 @@ Status of this sandbox MCP server and the wider Eden work it belongs to. This is
 - Gated batch file transfer: `xfer_propose` → `xfer_pending.sh` → `xfer_approve.sh <id> all|0,2|deny`, with 20-item / 10 MB / 50 MB limits, TTL 1–60 minutes, one-shot moves, sha256, and a log. There is no MCP approval tool.
 - ngrok free static domain (Cloudflare quick tunnels retired), agent heartbeats at 10s / 45s tolerance, watchdog every 10s with a singleton lock, `ensure_up.sh`, and bashrc/profile autostart hooks.
 - DoH + user-namespace hosts bind-mount so the tunnel agent still works on a box whose system DNS rewrites ngrok and Cloudflare names to `198.18.0.1`.
-- This educational repository: source for reading and learning (all rights reserved), README, this WIP file, [AGENTS.md](AGENTS.md), [docs/SECURITY-MODEL.md](docs/SECURITY-MODEL.md), [docs/BUILD-YOUR-OWN.md](docs/BUILD-YOUR-OWN.md), and [docs/EXPOSING-MCP-OVER-HTTPS.md](docs/EXPOSING-MCP-OVER-HTTPS.md). Live hostnames and keys stay off GitHub.
+- This educational repository: source for reading and learning (all rights reserved), README, this WIP file, [AGENTS.md](AGENTS.md), [docs/EDEN.md](docs/EDEN.md), [docs/SECURITY-MODEL.md](docs/SECURITY-MODEL.md), [docs/BUILD-YOUR-OWN.md](docs/BUILD-YOUR-OWN.md), and [docs/EXPOSING-MCP-OVER-HTTPS.md](docs/EXPOSING-MCP-OVER-HTTPS.md). Live hostnames and keys stay off GitHub.
 
 ## Open
 

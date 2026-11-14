@@ -82,7 +82,7 @@ Be honest when you describe this work.
 **Not verified here, or only designed:**
 
 - That every bypass a determined local script could try is logged or blocked. A "test node" for that is still a planned idea.
-- Pairing or guardian behavior of [eden-desktop-bridge](https://github.com/thriftshoppin/eden-desktop-bridge) on the operator's Windows deck (including PR #1's pairing gate).
+- Pairing or guardian behavior of [eden-desktop-bridge](https://github.com/thriftshoppin/eden-desktop-bridge) (**private**) on the operator's Windows deck (including PR #1's pairing gate).
 - End-to-end operation of [grok-hotline](https://github.com/thriftshoppin/grok-hotline) as the path onto that PC, from this publication work.
 - **Eden Link**, the planned master console.
 
@@ -95,7 +95,7 @@ The sandbox in this repo is one node in a larger consumer-agent safety stack. Ex
 - **Eden Link** — a planned console over multiple bridges (PC, Cyberdeck, this sandbox) with a live traffic view and a master kill switch. Link would only *relay* commands. Each Eden would keep its own local kill switch and acknowledge a per-session stop, so a dropped link cannot leave a session running. Pending approvals would always take priority over typed commands. An override for blocked content would be off by default, started only by the operator at the keyboard, never requestable by an agent, and applied to one item.
 - **Watchdog and border alert, file provenance, trust-by-hash** — planned ideas around an independent allowlist check, a visible "who is in control" border, and recording how a file arrived. Not implemented in this tree.
 
-Related source, for context: [eden-desktop-bridge](https://github.com/thriftshoppin/eden-desktop-bridge), [grok-hotline](https://github.com/thriftshoppin/grok-hotline). Open items for this repo: [WIP.md](../WIP.md).
+The developer write-up of how these pieces form a platform is [EDEN.md](EDEN.md). Related source, for context: [grok-hotline](https://github.com/thriftshoppin/grok-hotline) (public), [eden-desktop-bridge](https://github.com/thriftshoppin/eden-desktop-bridge) (**private**). Open items for this repo: [WIP.md](../WIP.md).
 
 ## Applying this in your own server
 
